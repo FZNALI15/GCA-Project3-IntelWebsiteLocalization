@@ -36,6 +36,7 @@
       <div class="nav-links">
         <a href="#timeline">Timeline</a>
         <a href="#goals">Sustainability</a>
+        <a href="#newsletter">Newsletter</a>
       </div>
 
     </nav>
@@ -586,6 +587,66 @@
 
 
     <!-- =========================
+         NEWSLETTER SUBSCRIPTION
+    ========================== -->
+    <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter-panel">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-lg-6">
+              <p class="section-label">STAY INFORMED</p>
+              <h2 id="newsletter-title">Sustainability updates, delivered.</h2>
+              <p class="newsletter-description">
+                Subscribe to receive updates about sustainability, responsible
+                innovation, and the technologies shaping a more efficient future.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <form class="newsletter-form" action="#" method="post">
+                <div class="mb-3">
+                  <label for="subscriber-email" class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="subscriber-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    aria-describedby="email-help"
+                    required
+                  >
+                  <div id="email-help" class="form-text">
+                    We'll only use your email for this student-project newsletter demo.
+                  </div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="agree"
+                    id="newsletter-consent"
+                    required
+                  >
+                  <label class="form-check-label" for="newsletter-consent">
+                    I agree to receive sustainability updates.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn newsletter-button">
+                  Subscribe
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
          CLOSING SECTION
     ========================== -->
     <section class="closing-section">
@@ -621,27 +682,33 @@
        FOOTER
   ========================== -->
   <footer class="footer">
-
     <div class="footer-content">
+      <div class="footer-brand">
+        <img
+          src="Images/intel logo wo bg.png"
+          alt="Intel logo"
+          class="footer-logo"
+        >
+        <div>
+          <p class="footer-title">Intel Sustainability Timeline</p>
+          <p class="student-project">
+            Educational student project created for the Global Career Accelerator.
+          </p>
+        </div>
+      </div>
 
-      <img
-        src="Images/intel logo wo bg.png"
-        alt="Intel logo"
-        class="footer-logo"
-      >
-
-      <p>
-        Intel Sustainability Timeline
-      </p>
-
-      <p class="student-project">
-        Educational student project created for the Global Career Accelerator.
-      </p>
-
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#timeline">Timeline</a>
+        <a href="#goals">Sustainability</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#home">Back to top</a>
+      </nav>
     </div>
 
+    <div class="footer-bottom">
+      <p>&copy; 2026 Intel Sustainability Timeline. Student project.</p>
+    </div>
   </footer>
-
 
   <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
