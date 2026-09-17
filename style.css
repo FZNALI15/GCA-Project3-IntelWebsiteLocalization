@@ -1092,3 +1092,86 @@ input:focus-visible {
     height: 215px;
   }
 }
+
+/* =========================
+   PROJECT 3: FORM STATUS
+========================= */
+
+.form-status {
+  min-height: 1.5em;
+  margin-top: 16px;
+  color: var(--intel-dark-blue);
+  font-weight: 700;
+}
+
+
+/* =========================
+   PROJECT 3: RTL SUPPORT
+========================= */
+
+/* Logical text direction/alignment follows the page direction. */
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] .hero-content,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .card-content,
+html[dir="rtl"] .card-details,
+html[dir="rtl"] .goal-card,
+html[dir="rtl"] .newsletter-section,
+html[dir="rtl"] .footer {
+  text-align: start;
+}
+
+/* Mirror custom flex/grid ordering where appropriate. */
+html[dir="rtl"] .navbar,
+html[dir="rtl"] .footer-content {
+  direction: rtl;
+}
+
+/* Keep the horizontal timeline itself intact, but start RTL users at the
+   right side and make card text follow RTL reading direction. */
+html[dir="rtl"] .timeline-wrapper {
+  direction: rtl;
+}
+
+html[dir="rtl"] .timeline-card {
+  direction: rtl;
+}
+
+/* Replace physical margins/alignment from the P2 footer with RTL-safe rules. */
+html[dir="rtl"] .student-project {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Goal numbers were originally pinned to the right in P2. Mirror them in RTL. */
+html[dir="rtl"] .goal-number {
+  right: auto;
+  left: 22px;
+}
+
+/* Inputs should follow the active writing direction. */
+html[dir="rtl"] input {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Arrow/icon spacing remains visually natural in RTL. */
+html[dir="rtl"] .hero-button,
+html[dir="rtl"] .back-to-top {
+  direction: rtl;
+}
+
+@media (max-width: 700px) {
+  html[dir="rtl"] .footer-content {
+    align-items: flex-start;
+  }
+
+  html[dir="rtl"] .student-project {
+    margin-right: 0;
+    text-align: right;
+  }
+}
