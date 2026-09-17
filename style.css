@@ -442,6 +442,82 @@ input:focus-visible {
 
 
 /* =========================
+   BOOTSTRAP THREE-COLUMN SECTION
+========================= */
+
+.impact-section {
+  padding: 105px 6%;
+  background: var(--white);
+}
+
+.impact-section .container {
+  max-width: 1400px;
+}
+
+.impact-heading {
+  max-width: 850px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.impact-card {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 30px;
+  background: var(--light-gray);
+  border-top: 5px solid var(--intel-blue);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow-hover);
+}
+
+.impact-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  background: var(--intel-blue);
+  color: var(--white);
+  font-size: 1.65rem;
+}
+
+.impact-card h3 {
+  color: var(--intel-dark-blue);
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.impact-card p {
+  color: var(--muted-text);
+  margin-bottom: 26px;
+}
+
+.impact-button {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 10px 18px;
+  border: 2px solid var(--intel-blue);
+  border-radius: 0;
+  color: var(--intel-blue);
+  background: var(--white);
+  font-weight: 700;
+}
+
+.impact-button:hover,
+.impact-button:focus {
+  background: var(--intel-blue);
+  border-color: var(--intel-blue);
+  color: var(--white);
+}
+
+
+/* =========================
    GOALS SECTION
 ========================= */
 
@@ -778,6 +854,13 @@ input:focus-visible {
 
   .timeline-instruction {
     display: none;
+  }
+
+
+  /* Three-column section */
+
+  .impact-section {
+    padding: 80px 5%;
   }
 
 
